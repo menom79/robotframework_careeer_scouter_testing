@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.11 on win32)" generated="20230725 12:41:02.560" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Suite" source="E:\testing\test_suite.robot">
+<test id="s1-t1" name="Test Example" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://career-scout.pengwin.broseidon.wimmalab.org/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230725 12:41:03.168" level="INFO">Opening browser 'chrome' to base url 'http://career-scout.pengwin.broseidon.wimmalab.org/'.</msg>
+<msg timestamp="20230725 12:41:03.177" level="INFO">Executing: C:\Users\LENOVO\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230725 12:41:03.168" endtime="20230725 12:41:05.845"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230725 12:41:05.845" endtime="20230725 12:41:06.138"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=theme-toggle</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:06.145" level="INFO">Clicking element 'class=theme-toggle'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.138" endtime="20230725 12:41:06.243"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css=select.langs</arg>
+<arg>en</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230725 12:41:06.243" level="INFO">Selecting options from selection list 'css=select.langs' by value en.</msg>
+<status status="PASS" starttime="20230725 12:41:06.243" endtime="20230725 12:41:06.419"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css=\#app &gt; div &gt; div.content &gt; div &gt; div &gt; h1</arg>
+<arg>Welcome to Career Scouter!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230725 12:41:06.419" level="INFO">Verifying element 'css=#app &gt; div &gt; div.content &gt; div &gt; div &gt; h1' contains exact text 'Welcome to Career Scouter!'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.419" endtime="20230725 12:41:06.467"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[1]/div/div[3]/a[2]</arg>
+<arg>1</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230725 12:41:06.467" endtime="20230725 12:41:06.483"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[1]/div/div[3]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:06.483" level="INFO">Clicking element '//*[@id="app"]/div/div[1]/div/div[3]/a[2]'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.483" endtime="20230725 12:41:06.628"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[1]/a</arg>
+<arg>1</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230725 12:41:06.628" endtime="20230725 12:41:06.659"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:06.659" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[1]/a'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.659" endtime="20230725 12:41:06.766"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css=\#app &gt; div &gt; div.content &gt; div &gt; div &gt; div.right &gt; div &gt; div.career_header &gt; div.career_personal &gt; div &gt; h4</arg>
+<arg>Name: Sarah Johnson</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230725 12:41:06.774" level="INFO">Verifying element 'css=#app &gt; div &gt; div.content &gt; div &gt; div &gt; div.right &gt; div &gt; div.career_header &gt; div.career_personal &gt; div &gt; h4' contains exact text 'Name: Sarah Johnson'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.773" endtime="20230725 12:41:06.822"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:06.822" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.822" endtime="20230725 12:41:06.887"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:06.894" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.887" endtime="20230725 12:41:06.969"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:06.969" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[4]/a'.</msg>
+<status status="PASS" starttime="20230725 12:41:06.969" endtime="20230725 12:41:07.060"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:07.060" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[1]/div/div/div[5]/a'.</msg>
+<status status="PASS" starttime="20230725 12:41:07.060" endtime="20230725 12:41:07.130"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[1]/div/div[3]/a[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 12:41:07.130" level="INFO">Clicking element '//*[@id="app"]/div/div[1]/div/div[3]/a[5]'.</msg>
+<status status="PASS" starttime="20230725 12:41:07.130" endtime="20230725 12:41:07.196"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="app"]/div/div[1]/div/div[3]/a[5]</arg>
+<arg>1</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230725 12:41:07.196" endtime="20230725 12:41:07.211"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css=\#app &gt; div &gt; div.content &gt; div &gt; h1</arg>
+<arg>GDPR</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230725 12:41:07.220" level="INFO">Verifying element 'css=#app &gt; div &gt; div.content &gt; div &gt; h1' contains exact text 'GDPR'.</msg>
+<status status="PASS" starttime="20230725 12:41:07.211" endtime="20230725 12:41:07.284"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css=\#app &gt; div &gt; div.content &gt; div &gt; h3:nth-child(2)</arg>
+<arg>Processing of student information</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230725 12:41:07.284" level="INFO">Verifying element 'css=#app &gt; div &gt; div.content &gt; div &gt; h3:nth-child(2)' contains exact text 'Processing of student information'.</msg>
+<status status="PASS" starttime="20230725 12:41:07.284" endtime="20230725 12:41:07.308"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230725 12:41:07.308" endtime="20230725 12:41:09.504"/>
+</kw>
+<status status="PASS" starttime="20230725 12:41:03.168" endtime="20230725 12:41:09.504"/>
+</test>
+<status status="PASS" starttime="20230725 12:41:02.577" endtime="20230725 12:41:09.508"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Suite">Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
